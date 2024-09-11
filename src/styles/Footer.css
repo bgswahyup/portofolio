@@ -1,0 +1,10 @@
+/* Footer Section Styling */
+.footer {
+    height: 10vh;
+    background: linear-gradient(15deg,#000000, #1e3c72); /* Gradient for a modern look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+  }

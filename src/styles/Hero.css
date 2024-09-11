@@ -1,0 +1,115 @@
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url('../assets/heros.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Hero Content */
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fdbd01;
+  animation: fadeInSlide 3s infinite;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2; /* Menambahkan sedikit spasi di antara teks */
+  margin-bottom: 20px; /* Menambah jarak antara heading dan paragraph */
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 30px; /* Tambah jarak antara paragraf dan tombol */
+}
+
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* Button animation */
+.hero-content .btn {
+  margin-top: 2rem;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: pulseButton 2s infinite ease-in-out;
+  transition: background-color 0.3s;
+}
+
+.hero-content .btn:hover {
+  background-color: #0056b3;
+}
+
+@keyframes pulseButton {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Responsive styling for mobile (Android) */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .hero-content .btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Responsive styling for desktop */
+@media (min-width: 769px) {
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .hero-content p {
+    font-size: 1.8rem;
+  }
+
+  .hero-content .btn {
+    font-size: 1.5rem;
+    padding: 12px 24px;
+  }
+}
